@@ -9,6 +9,16 @@ class MySiteHandler(SimpleHTTPRequestHandler):
         loader=PackageLoader('main'),
         autoescape=select_autoescape()
     )
+    extensions_map={
+        '.manifest': 'text/cache-manifest',
+	'.html': 'text/html',
+        '.png': 'image/png',
+	'.jpg': 'image/jpg',
+	'.svg':	'image/svg+xml',
+	'.css':	'text/css',
+	'.js':	'application/x-javascript',
+	'': 'application/octet-stream',
+    }
 
     def do_GET(self):
         if self.path == "/":
