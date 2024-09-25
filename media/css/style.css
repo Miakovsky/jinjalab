@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+    background: url("/media/img/bg_pic.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior:smooth;
+    margin-top: 100px;
+}
+
+.tabs {
+    margin-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(194, 148, 64, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    font-size: 200%;
+    margin-left: 100px;
+    color: rgb(223, 223, 223);
+}
+
+h3 {
+    font-size: 120%;
+    margin-left: 100px;
+    color: rgb(223, 223, 223);
+}
+
+h4 {
+    color: rgb(163, 61, 61);
+}
+
+p {
+    font-size: 150%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(194, 194, 194);
+    text-align: left;
+}
+
+.description p {
+    font-size: 150%;
+    text-align: left;
+}
+
+
+
+.main {
+    display: block;
+    background-color: rgb(26, 26, 26);
+    width: 1000px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(207, 207, 207);
+}
+
+.team_img{
+    width: 1000px;
+}
+
+

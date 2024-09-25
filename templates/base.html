@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {% block head %}
+        <link rel="stylesheet" type="text/css" href="/media/css/style.css">
+        {% endblock %}
+        <link rel="icon" href="../media/img/favicon.png"/>
+        <title>Pathologic 2</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="tabs">
+                <a href="/">Главная</a>
+                <a href="/games">Наши игры</a>
+                <a href="/about">О нас</a>
+                <a href="/news">Новости</a>
+            </div>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

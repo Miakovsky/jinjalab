@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        h3 {
+            margin-left: 50px;
+        }
+        h2 {
+            margin-left: 10px;
+        }
+
+        input {
+            margin-left: 10px;
+            width: 100px;
+        }
+        .enter {
+            margin-left: 50px;
+            width: 500px;
+        }
+        h4 {
+            margin-left: 50px;
+        }
+        .news {
+            display: grid;
+            grid-auto-flow: row;
+            margin-bottom: 40px;
+        }
+        
+        li {
+            border: 1px solid white;
+            margin-right: 50px;
+        }
+
+    </style>
+{% endblock %}
+{% block content %}
+<h3>Хотите получать новости на вашу электроную почту?</h3>
+<form action="" method="POST">
+    <input class="enter" type="text" id="email" name="email" value={{email}}>
+    <input type="submit" value="Подписаться">
+    <h4>{{message}}</h4>
+</form>
+
+<ul class="news_list">
+    {% for new in news %}
+        <li class="news">
+            <h2>{{ new['title']}}</h2>
+            <p>{{ new['desc']}}</p>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
